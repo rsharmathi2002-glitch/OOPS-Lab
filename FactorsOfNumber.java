@@ -1,23 +1,24 @@
-
 import java.util.Scanner;
 
-public class PrintNumbers {
+public class FactorsOfNumber {
     public static void main(String[] args) {
 
         // Create Scanner object
         Scanner sc = new Scanner(System.in);
 
         // Ask the user to enter a number
-        System.out.print("Enter the value of N: ");
+        System.out.print("Enter a number: ");
 
-        // Read the value of N
+        // Read the number
         int N = sc.nextInt();
 
-        // Print numbers from 1 to N
-        System.out.println("Numbers from 1 to " + N + " are:");
+        // Print the factors of N
+        System.out.println("Factors of " + N + " are:");
 
         for (int i = 1; i <= N; i++) {
-            System.out.println(i);
+            if (N % i == 0) {
+                System.out.println(i);
+            }
         }
 
         // Close the Scanner
